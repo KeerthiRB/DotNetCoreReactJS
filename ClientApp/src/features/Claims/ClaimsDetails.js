@@ -1,17 +1,12 @@
 import React,{Fragment, useState, useEffect} from "react"
-import { Table, Header, Card, Button, ListList, List } from "semantic-ui-react"
-import axios, { AxiosResponse } from 'axios';
+import { Header, Card, Button,  List } from "semantic-ui-react"
+import axios from 'axios';
+import IVModel from '../../Models/IVModel';
 
-const defaultClaimsEntity={
-    claimID:0,
-    claimType:"Unknown",
-    claimsAmount:0,
-    claimsStatus:"N/A",
-    claimsTransactions:[""]   
- };
+
 
 function ClaimsDetails(){
-    const[claim,SetClaim]= useState(defaultClaimsEntity);
+    const[claim,SetClaim]= useState(IVModel.ClaimsEntity);
     useEffect(()=> {
         axios.get("/Claims/GetClaim").then(response=>{
             SetClaim(response.data)

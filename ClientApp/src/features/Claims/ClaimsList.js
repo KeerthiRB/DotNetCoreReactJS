@@ -1,14 +1,9 @@
 import React,{Fragment, useState, useEffect} from "react"
 import { Table, Header } from "semantic-ui-react"
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
+import IVModel from '../../Models/IVModel'
 
-const defaultClaimsEntity=[{
-    claimID:0,
-    claimType:"Unknown",
-    claimsAmount:0,
-    claimsStatus:"N/A",
-    claimsTransactions:[""]   
- }];
+const defaultClaimsEntity=[IVModel.ClaimsEntity];
 
 function ClaimsList(){
     const[ClaimsEntities,SetClaimsEntities]= useState(defaultClaimsEntity)
