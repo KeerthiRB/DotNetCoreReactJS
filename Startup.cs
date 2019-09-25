@@ -24,6 +24,7 @@ namespace dotNetCoreReactJSApp
 
             services.AddControllersWithViews();
             services.AddTransient<IClaimsData, ClaimsData>();
+            services.AddTransient<ITransactionData, TransactionData>();
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

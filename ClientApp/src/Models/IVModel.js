@@ -1,6 +1,6 @@
 let IVModel={
     ClaimsEntity:{
-        claimID:0,
+    claimID:0,
     claimType:"Unknown",
     claimsAmount:0,
     claimsStatus:"N/A",

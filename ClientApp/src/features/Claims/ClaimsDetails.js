@@ -2,6 +2,7 @@ import React,{Fragment, useState, useEffect} from "react"
 import { Header, Card, Button,  List } from "semantic-ui-react"
 import axios from 'axios';
 import IVModel from '../../Models/IVModel';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 
@@ -33,9 +34,10 @@ function ClaimsDetails(){
   </Card.Content>
   <Card.Content extra>
     <div className='ui two buttons'>
-      <Button basic color='green'>
-        Approve
-      </Button>
+    <Link to="/Transactions/"><Button basic color='green'>
+        Transactions 
+      </Button></Link>
+      
       <Button basic color='red'>
         Decline
       </Button>

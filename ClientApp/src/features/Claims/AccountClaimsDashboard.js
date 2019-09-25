@@ -1,7 +1,7 @@
 import React from "react"
 import { Grid } from "semantic-ui-react"
-import ClaimsList from "./Claims/ClaimsList"
-import ClaimsDetails from "./Claims/ClaimsDetails"
+import ClaimsList from "./ClaimsList"
+import ClaimsDetails from "./ClaimsDetails"
 
 
 function AccountClaimsDashboard(){
