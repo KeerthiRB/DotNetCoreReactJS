@@ -1,4 +1,4 @@
-let IVModel={
+const IVModel={
     ClaimsEntity:{
     claimID:0,
     claimType:"Unknown",
